@@ -1,0 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as Cesium from "cesium";
+import "cesium/Build/Cesium/Widgets/widgets.css";
+window.CESIUM_BASE_URL = "";
+// Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjZGUyZTQ3OC0wMjk2LTQ2NDUtYWU5Yi03MmRmODE1MWY1YTIiLCJpZCI6NDA2OTQsImlhdCI6MTYwOTEyMzgwMn0.uvPj3kWdZTeymUS7AjP9aNWW_PPjHsBaSKsHZomH8mA';
+window.Cesium = Cesium;
+// debugger;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
